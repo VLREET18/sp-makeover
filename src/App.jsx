@@ -292,6 +292,113 @@ export default function SPMakeoverPortfolio() {
         </div>
       </section>
 
+      {/* Online Booking Form */}
+      <section className="max-w-6xl mx-auto px-6 py-24 relative z-10">
+        <div className="text-center mb-16">
+          <p className="uppercase tracking-[0.3em] text-zinc-500 text-sm mb-4">
+            Online Booking
+          </p>
+
+          <h2 className="text-5xl font-bold mb-6">
+            Reserve Your Beauty Session
+          </h2>
+
+          <p className="text-zinc-400 max-w-2xl mx-auto text-lg leading-relaxed">
+            Fill out the booking form below and our team will contact you shortly to confirm your appointment.
+          </p>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="bg-black/80 backdrop-blur-xl border border-zinc-800 rounded-[2rem] p-8 md:p-12 shadow-2xl"
+        >
+          <form 
+            action="https://formsubmit.co/edgha72@gmail.com"
+            method="POST"
+            className="grid md:grid-cols-2 gap-6"
+            >
+            <div>
+              <label className="block text-zinc-300 mb-3 text-sm uppercase tracking-widest">
+                Full Name
+              </label>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                name= "name"
+                className="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 text-white outline-none focus:border-white transition-all duration-300"
+              />
+            </div>
+
+            <div>
+              <label className="block text-zinc-300 mb-3 text-sm uppercase tracking-widest">
+                Phone Number
+              </label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Enter phone number"
+                className="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 text-white outline-none focus:border-white transition-all duration-300"
+              />
+            </div>
+
+            <div>
+              <label className="block text-zinc-300 mb-3 text-sm uppercase tracking-widest">
+                Select Service
+              </label>
+              <select className="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 text-white outline-none focus:border-white transition-all duration-300"
+                name="services">
+                <option>Bridal Makeup</option>
+                <option>HD Makeup</option>
+                <option>Party Makeup</option>
+                <option>Engagement Makeup</option>
+                <option>Haldi Makeup</option>
+                <option>Mehendi Makeup</option>
+                <option>Nail Extension</option>
+                <option>Hair Styling</option>
+                
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-zinc-300 mb-3 text-sm uppercase tracking-widest">
+                Booking Date
+              </label>
+              <input
+                type="date"
+                name="date"
+                className="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 text-white outline-none focus:border-white transition-all duration-300"
+              />
+            </div>
+
+            <div className="md:col-span-2">
+              <label className="block text-zinc-300 mb-3 text-sm uppercase tracking-widest">
+                Additional Message
+              </label>
+              <textarea
+                rows="5"
+                placeholder="Tell us about your booking requirements"
+                name="message"
+                className="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 text-white outline-none focus:border-white transition-all duration-300 resize-none"
+              ></textarea>
+            </div>
+
+            <div className="md:col-span-2 text-center mt-4">
+              <button
+                type="submit"
+                className="px-10 py-5 rounded-2xl bg-white text-black font-semibold text-lg hover:scale-110 hover:shadow-white/30 transition-all duration-500 shadow-2xl"
+              >
+                Book Appointment Now ✨
+              </button>
+            </div>
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+          </form>
+        </motion.div>
+      </section>
+
       {/* Contact */}
       <section className="max-w-5xl mx-auto px-6 py-24 text-center relative z-10">
         <p className="uppercase tracking-[0.3em] text-zinc-500 text-sm mb-4">
