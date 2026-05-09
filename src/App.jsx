@@ -100,10 +100,7 @@ export default function SPMakeoverPortfolio() {
           </p>
 
           <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
-            SP MAKEOVER <br />
-            <span className="text-zinc-300">
-              MAKEUP STUDIO & ACADEMY
-            </span>
+            SP MAKEUP STUDIO <br /> <span className="text-zinc-300">WITH BEAUTY SALON & SPA <br /> (Only for ladies)</span>
           </h1>
 
           <p className="max-w-3xl mx-auto text-zinc-400 text-lg md:text-xl leading-relaxed mb-10">
@@ -160,7 +157,7 @@ export default function SPMakeoverPortfolio() {
           </h2>
 
           <p className="text-zinc-400 leading-relaxed text-lg mb-6">
-            Welcome to SP Makeover Makeup Studio & Academy — a premium beauty
+            Welcome to SP MAKEUP STUDIO WITH BEAUTY SALON & SPA (Only for ladies) — a premium beauty
             destination in Katihar, Bihar, dedicated to enhancing confidence,
             elegance, and beauty through professional makeup artistry and salon
             services.
@@ -414,7 +411,7 @@ export default function SPMakeoverPortfolio() {
 
         <p className="text-zinc-400 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
           Experience premium beauty services, bridal transformations, and luxury
-          salon care at SP Makeover Makeup Studio & Academy.
+          salon care at SP MAKEUP STUDIO WITH BEAUTY SALON & SPA (Only for ladies).
         </p>
 
         <div className="grid md:grid-cols-3 gap-6 text-left mb-12">
@@ -494,7 +491,7 @@ export default function SPMakeoverPortfolio() {
       )}
 
       <footer className="border-t border-zinc-800 py-8 text-center text-zinc-500 text-sm relative z-10">
-        © 2026 SP Makeover Makeup Studio & Academy • All Rights Reserved
+        © 2026 SP MAKEUP STUDIO WITH BEAUTY SALON & SPA (Only for ladies) • All Rights Reserved
       </footer>
     </div>
   );
