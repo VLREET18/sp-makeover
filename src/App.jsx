@@ -95,6 +95,14 @@ export default function SPMakeoverPortfolio() {
         <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-black to-zinc-950 opacity-95"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 lg:py-36 text-center">
+          <div className="flex justify-center mb-8">
+            <img
+              src="https://img.sanishtech.com/u/f7cd2f7049ef160542cde33755994326.jpg"
+              alt="SP Makeup Studio Logo"
+              className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full border-4 border-zinc-700 shadow-2xl"
+            />
+          </div>
+
           <p className="tracking-[0.35em] text-zinc-400 uppercase text-sm mb-4">
             Luxury Beauty Experience
           </p>
@@ -364,6 +372,21 @@ export default function SPMakeoverPortfolio() {
 
             <div>
               <label className="block text-zinc-300 mb-3 text-sm uppercase tracking-widest">
+                Payment Method
+              </label>
+              <select
+                name="payment_method"
+                className="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-4 text-white outline-none focus:border-white transition-all duration-300"
+              >
+                <option>Google Pay</option>
+                <option>PhonePe</option>
+                <option>Paytm</option>
+                
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-zinc-300 mb-3 text-sm uppercase tracking-widest">
                 Booking Date
               </label>
               <input
@@ -374,6 +397,24 @@ export default function SPMakeoverPortfolio() {
             </div>
 
             <div className="md:col-span-2">
+              <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 mb-6 text-center">
+                <h3 className="text-2xl font-bold mb-4">Advance Booking Payment</h3>
+                <p className="text-zinc-400 mb-4">
+                  Kindly pay the advance booking amount of 1000/- through UPI after submitting the form. Then only your booking will be considered as confirmed.
+                </p>
+
+                <div className="inline-block bg-white p-4 rounded-2xl mb-4">
+                  <img
+                    src="https://img.sanishtech.com/u/f1b81123cb58ecaa640e7d75109cc9c4.jpg"
+                    alt="UPI QR"
+                    className="w-52 h-52 object-cover"
+                  />
+                </div>
+
+                <p className="text-zinc-300 text-lg font-semibold">
+                  UPI ID: sonamprakas17@okaxis
+                </p>
+              </div>
               <label className="block text-zinc-300 mb-3 text-sm uppercase tracking-widest">
                 Additional Message
               </label>
