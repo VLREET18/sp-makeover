@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 export default function SPMakeoverPortfolio() {
+  const [selectedImage, setSelectedImage] = useState(null);
   const services = [
     {
       category: 'Bridal Makeup',
@@ -235,7 +237,8 @@ export default function SPMakeoverPortfolio() {
               key={index}
               whileHover={{ scale: 1.03, y: -10 }}
               transition={{ duration: 0.4 }}
-              className="rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-900 h-80 relative group shadow-2xl"
+              onClick={() => setSelectedImage(item.image)}
+              className="rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-900 h-80 relative group shadow-2xl cursor-pointer"
             >
               <img
                 src={item.image}
@@ -469,6 +472,26 @@ export default function SPMakeoverPortfolio() {
           <path d="M16.01 3C8.84 3 3 8.74 3 15.81c0 2.5.74 4.94 2.14 7.03L3 29l6.35-2.08a13.1 13.1 0 006.66 1.82h.01c7.17 0 13.01-5.74 13.01-12.81C29.02 8.74 23.18 3 16.01 3zm0 23.48h-.01a10.8 10.8 0 01-5.5-1.5l-.39-.23-3.77 1.24 1.23-3.67-.25-.38a10.45 10.45 0 01-1.65-5.63c0-5.77 4.76-10.46 10.62-10.46 5.86 0 10.62 4.69 10.62 10.46 0 5.77-4.76 10.47-10.61 10.47z" />
         </svg>
       </a>
+
+      {/* Fullscreen Image Viewer */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/95 z-[100] flex items-center justify-center p-6"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button
+            className="absolute top-6 right-6 text-white text-5xl font-light hover:scale-110 transition-all duration-300"
+          >
+            ×
+          </button>
+
+          <img
+            src={selectedImage}
+            alt="Gallery Preview"
+            className="max-w-full max-h-full rounded-3xl shadow-2xl object-contain"
+          />
+        </div>
+      )}
 
       <footer className="border-t border-zinc-800 py-8 text-center text-zinc-500 text-sm relative z-10">
         © 2026 SP Makeover Makeup Studio & Academy • All Rights Reserved
