@@ -345,6 +345,24 @@ export default function SPMakeoverPortfolio() {
       </section>
 
       {/* Footer */}
+      {/* Floating WhatsApp Button */}
+      <a
+        href="https://wa.me/918541971625"
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-400 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-500 animate-bounce"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          fill="currentColor"
+          className="w-8 h-8"
+        >
+          <path d="M19.11 17.21c-.29-.14-1.72-.85-1.98-.95-.27-.1-.46-.14-.66.15-.19.29-.76.95-.93 1.14-.17.19-.34.22-.63.07-.29-.14-1.22-.45-2.32-1.44-.86-.76-1.44-1.7-1.61-1.99-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.66-1.59-.91-2.18-.24-.58-.49-.5-.66-.5h-.56c-.19 0-.51.07-.77.36-.27.29-1.01.98-1.01 2.39 0 1.41 1.03 2.78 1.17 2.97.14.19 2.03 3.1 4.92 4.34.69.29 1.23.46 1.65.58.69.22 1.32.19 1.81.12.55-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34z" />
+          <path d="M16.01 3C8.84 3 3 8.74 3 15.81c0 2.5.74 4.94 2.14 7.03L3 29l6.35-2.08a13.1 13.1 0 006.66 1.82h.01c7.17 0 13.01-5.74 13.01-12.81C29.02 8.74 23.18 3 16.01 3zm0 23.48h-.01a10.8 10.8 0 01-5.5-1.5l-.39-.23-3.77 1.24 1.23-3.67-.25-.38a10.45 10.45 0 01-1.65-5.63c0-5.77 4.76-10.46 10.62-10.46 5.86 0 10.62 4.69 10.62 10.46 0 5.77-4.76 10.47-10.61 10.47z" />
+        </svg>
+      </a>
+
       <footer className="border-t border-zinc-800 py-8 text-center text-zinc-500 text-sm relative z-10">
         © 2026 SP Makeover Makeup Studio & Academy • All Rights Reserved
       </footer>
