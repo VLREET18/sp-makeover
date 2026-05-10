@@ -48,32 +48,32 @@ export default function SPMakeoverPortfolio() {
     {
       title: 'Nude Makeup For Bridal',
       image:
-        'https://img.sanishtech.com/u/3336d259cecc3469b3c124bb22fa2d10.jpg',
+        'https://i.ibb.co/VcyS2ph2/nude-makeup.jpg',
     },
     {
       title: 'Ultra HD Bridal Makeup',
       image:
-        'https://img.sanishtech.com/u/f89df7313c097e7408f9378472c40785.jpg',
+        'https://i.ibb.co/qFDwBvTd/ultra-hd.jpg',
     },
     {
       title: 'Party Makeup',
       image:
-        'https://img.sanishtech.com/u/1be9e2a3829cc20f1724799201c5a436.jpg',
+        'https://i.ibb.co/DDLzS1zx/party1.jpg',
     },
     {
       title: 'Haldi Makeup',
       image:
-        'https://img.sanishtech.com/u/857a69ca184606ad260995563673ebe8.jpg',
+        'https://i.ibb.co/76fmq71/haldi.jpg',
     },
     {
       title: 'Cocktail Party Makeup',
       image:
-        'https://img.sanishtech.com/u/b5bdec65cec325e3cc528a50203549a5.jpg',
+        'https://i.ibb.co/gZRSN7ZX/cocktail.jpg',
     },
     {
       title: '25th Anniversary Party Makeup',
       image:
-        'https://img.sanishtech.com/u/c23d63a4940c17971b877603795f6d0e.jpg',
+        'https://i.ibb.co/XfbcLrD2/25ann.jpg',
     },
   ];
 
@@ -97,7 +97,7 @@ export default function SPMakeoverPortfolio() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 lg:py-36 text-center">
           <div className="flex justify-center mb-8">
             <img
-              src="https://img.sanishtech.com/u/f7cd2f7049ef160542cde33755994326.jpg"
+              src="https://i.ibb.co/C5PYd9xc/logo.jpg"
               alt="SP Makeup Studio Logo"
               className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full border-4 border-zinc-700 shadow-2xl"
             />
@@ -148,7 +148,7 @@ export default function SPMakeoverPortfolio() {
         <div>
           <div className="rounded-3xl overflow-hidden border border-zinc-800 shadow-2xl bg-zinc-900 h-[450px]">
             <img
-              src="https://img.sanishtech.com/u/85d61398748801f986965fce960ce63e.jpg"
+              src="https://i.ibb.co/7NQLRW8c/main.jpg"
               alt="Sonam Prakash"
               className="w-full h-full object-cover hover:scale-105 transition-all duration-700"
             />
@@ -405,7 +405,7 @@ export default function SPMakeoverPortfolio() {
 
                 <div className="inline-block bg-white p-4 rounded-2xl mb-4">
                   <img
-                    src="https://img.sanishtech.com/u/f1b81123cb58ecaa640e7d75109cc9c4.jpg"
+                    src="https://i.ibb.co/v4nKBwFV/scanner.jpg"
                     alt="UPI QR"
                     className="w-52 h-52 object-cover"
                   />
