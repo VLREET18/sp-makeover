@@ -75,6 +75,38 @@ export default function SPMakeoverPortfolio() {
       image:
         'https://i.ibb.co/XfbcLrD2/25ann.jpg',
     },
+
+    /* ADD MORE GALLERY IMAGES BELOW */
+    {
+      title: 'Haldi Makeup',
+      image:
+        'https://i.ibb.co/9kh1mnZJ/haldi1.jpg',
+    },
+    {
+      title: 'Christian Bride Makeup',
+      image:
+        'https://i.ibb.co/mFYKTNMH/christian-bride.jpg',
+    },
+    {
+      title: 'Engagement Makeup',
+      image:
+        'https://i.ibb.co/8gX10Gcq/engagement.jpg"',
+    },
+    {
+      title: 'HD Bridal Makeup',
+      image:
+        'https://i.ibb.co/4RpnQB7H/hd-bridal.jpg',
+    },
+    {
+      title: 'Bengali Bridal Makeup',
+      image:
+        'https://i.ibb.co/qYDYvcCQ/bengali.jpg',
+    },
+    {
+      title: 'Airbrush Bridal Makeup',
+      image:
+        'https://i.ibb.co/cKKL88W6/airbrush.jpg',
+    },
   ];
 
   return (
