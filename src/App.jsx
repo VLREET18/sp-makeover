@@ -611,12 +611,12 @@ export default function SPMakeoverPortfolio() {
               </div>
 
               <a
-                href="https://www.instagram.com/itz__reet18__/?hl=en"
+                href="https://www.instagram.com/rg_ks18?igsh=MWJvYWFsOGh3YWhvZg=="
                 target="_blank"
                 rel="noreferrer"
                 className="inline-block px-8 py-4 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition-all duration-500 shadow-2xl hover:shadow-white/30"
               >
-                Follow @itz__reet18__
+                Follow @rg_ks18
               </a>
             </div>
           </div>
