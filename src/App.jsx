@@ -13,7 +13,7 @@ export default function SPMakeoverPortfolio() {
         ['Muslim Bridal Makeup', '₹8000 - ₹20000'],
         ['Christian Bridal Makeup', '₹8000 - ₹20000'],
         ['HD Bridal Makeup', '₹12000 - ₹20000'],
-        ['Arabic Bridal Makeup', '₹12000 - ₹25000'],
+        ['Airbrush Bridal Makeup', '₹15000 - ₹30000'],
       ],
     },
     {
@@ -562,6 +562,66 @@ export default function SPMakeoverPortfolio() {
           />
         </div>
       )}
+
+      {/* Developer Section */}
+      <section className="max-w-5xl mx-auto px-6 py-20 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="bg-zinc-950/80 backdrop-blur-xl border border-zinc-800 rounded-[2rem] overflow-hidden shadow-2xl"
+        >
+          <div className="grid md:grid-cols-2 items-center">
+            <div className="relative h-full min-h-[400px] overflow-hidden">
+              <img
+                src="https://i.ibb.co/ZR8Wj259/Whats-App-Image-2026-05-13-at-9-45-50-PM.jpg"
+                alt="Reet"
+                className="w-full h-full object-cover hover:scale-105 transition-all duration-700"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+            </div>
+
+            <div className="p-10 md:p-14">
+              <p className="uppercase tracking-[0.3em] text-zinc-500 text-sm mb-4">
+                Website Developer
+              </p>
+
+              <h2 className="text-5xl font-bold mb-6">
+                Reet
+              </h2>
+
+              <p className="text-zinc-400 text-lg leading-relaxed mb-6">
+                Creative developer, editor and gaming enthusiast focused on building aesthetic premium websites, luxury portfolio experiences and modern digital brand identities.
+              </p>
+
+              <div className="flex flex-wrap gap-4 mb-8">
+                <div className="px-5 py-3 rounded-2xl bg-zinc-900 border border-zinc-800">
+                  💻 Coder
+                </div>
+
+                <div className="px-5 py-3 rounded-2xl bg-zinc-900 border border-zinc-800">
+                  🎬 Editor
+                </div>
+
+                <div className="px-5 py-3 rounded-2xl bg-zinc-900 border border-zinc-800">
+                  🎮 Gamer
+                </div>
+              </div>
+
+              <a
+                href="https://www.instagram.com/itz__reet18__/?hl=en"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-block px-8 py-4 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition-all duration-500 shadow-2xl hover:shadow-white/30"
+              >
+                Follow @itz__reet18__
+              </a>
+            </div>
+          </div>
+        </motion.div>
+      </section>
 
       <footer className="border-t border-zinc-800 py-8 text-center text-zinc-500 text-sm relative z-10">
         © 2026 SP MAKEUP STUDIO WITH BEAUTY SALON & SPA (Only for ladies) • All Rights Reserved
