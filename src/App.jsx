@@ -2,6 +2,17 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 export default function SPMakeoverPortfolio() {
+  const smoothScroll = (e, targetId) => {
+    e.preventDefault();
+    const section = document.querySelector(targetId);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
   const [selectedImage, setSelectedImage] = useState(null);
   const services = [
     {
@@ -110,7 +121,7 @@ export default function SPMakeoverPortfolio() {
   ];
 
   return (
-    <div className="bg-black text-white min-h-screen font-sans overflow-hidden">
+    <div className="bg-black text-white min-h-screen font-sans overflow-hidden" style={{ scrollBehavior: 'smooth' }}>
       {/* Background Glow */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 left-0 w-96 h-96 bg-white/5 blur-3xl rounded-full animate-pulse"></div>
@@ -118,7 +129,7 @@ export default function SPMakeoverPortfolio() {
       </div>
 
       {/* Hero Section */}
-      <motion.section
+      <motion.section id="about"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -126,7 +137,33 @@ export default function SPMakeoverPortfolio() {
       >
         <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-black to-zinc-950 opacity-95"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 lg:py-36 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-10 lg:py-16 text-center">
+          {/* Navigation */}
+          <div className="flex flex-wrap justify-center gap-4 mb-16">
+            <a href="#about" onClick={(e) => smoothScroll(e, '#about')} className="px-5 py-3 rounded-2xl border border-zinc-700 hover:bg-zinc-900 hover:scale-110 hover:-translate-y-1 transition-all duration-500 text-sm uppercase tracking-widest shadow-xl hover:shadow-white/10">
+              About
+            </a>
+
+            <a href="#gallery" onClick={(e) => smoothScroll(e, '#gallery')} className="px-5 py-3 rounded-2xl border border-zinc-700 hover:bg-zinc-900 hover:scale-110 hover:-translate-y-1 transition-all duration-500 text-sm uppercase tracking-widest shadow-xl hover:shadow-white/10">
+              Gallery
+            </a>
+
+            <a href="#services" onClick={(e) => smoothScroll(e, '#services')} className="px-5 py-3 rounded-2xl border border-zinc-700 hover:bg-zinc-900 hover:scale-110 hover:-translate-y-1 transition-all duration-500 text-sm uppercase tracking-widest shadow-xl hover:shadow-white/10">
+              Menu
+            </a>
+
+            <a href="#booking" onClick={(e) => smoothScroll(e, '#booking')} className="px-5 py-3 rounded-2xl border border-zinc-700 hover:bg-zinc-900 hover:scale-110 hover:-translate-y-1 transition-all duration-500 text-sm uppercase tracking-widest shadow-xl hover:shadow-white/10">
+              Book Now
+            </a>
+
+            <a href="#contact" onClick={(e) => smoothScroll(e, '#contact')} className="px-5 py-3 rounded-2xl border border-zinc-700 hover:bg-zinc-900 hover:scale-110 hover:-translate-y-1 transition-all duration-500 text-sm uppercase tracking-widest shadow-xl hover:shadow-white/10">
+              Contact
+            </a>
+
+            <a href="#developer" onClick={(e) => smoothScroll(e, '#developer')} className="px-5 py-3 rounded-2xl border border-zinc-700 hover:bg-zinc-900 hover:scale-110 hover:-translate-y-1 transition-all duration-500 text-sm uppercase tracking-widest shadow-xl hover:shadow-white/10">
+              Developer
+            </a>
+          </div>
           <div className="flex justify-center mb-8">
             <img
               src="https://i.ibb.co/C5PYd9xc/logo.jpg"
@@ -152,7 +189,7 @@ export default function SPMakeoverPortfolio() {
               href="https://wa.me/918541971625"
               target="_blank"
               rel="noreferrer"
-              className="px-8 py-4 rounded-2xl bg-white text-black font-semibold hover:scale-110 transition-all duration-500 shadow-2xl hover:shadow-white/30"
+              className="px-8 py-4 rounded-2xl bg-white text-black font-semibold hover:scale-110 hover:-translate-y-1 transition-all duration-500 shadow-2xl hover:shadow-white/30 active:scale-95"
             >
               Book Appointment
             </a>
@@ -161,7 +198,7 @@ export default function SPMakeoverPortfolio() {
               href="https://www.instagram.com/s.p_makeover_17"
               target="_blank"
               rel="noreferrer"
-              className="px-8 py-4 rounded-2xl border border-zinc-700 hover:bg-zinc-900 transition-all duration-300"
+              className="px-8 py-4 rounded-2xl border border-zinc-700 hover:bg-zinc-900 hover:scale-110 hover:-translate-y-1 transition-all duration-500 shadow-xl hover:shadow-white/10 active:scale-95"
             >
               View Instagram
             </a>
@@ -259,7 +296,7 @@ export default function SPMakeoverPortfolio() {
       </section>
 
       {/* Gallery */}
-      <section className="max-w-7xl mx-auto px-6 py-24 relative z-10">
+      <section id="gallery" className="max-w-7xl mx-auto px-6 py-24 relative z-10">
         <div className="text-center mb-16">
           <p className="uppercase tracking-[0.3em] text-zinc-500 text-sm mb-4">
             Portfolio
@@ -292,7 +329,7 @@ export default function SPMakeoverPortfolio() {
       </section>
 
       {/* Services */}
-      <section className="bg-zinc-950 border-y border-zinc-800 py-24 px-6 relative z-10">
+      <section id="services" className="bg-zinc-950 border-y border-zinc-800 py-24 px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="uppercase tracking-[0.3em] text-zinc-500 text-sm mb-4">
@@ -333,7 +370,7 @@ export default function SPMakeoverPortfolio() {
       </section>
 
       {/* Online Booking Form */}
-      <section className="max-w-6xl mx-auto px-6 py-24 relative z-10">
+      <section id="booking" className="max-w-6xl mx-auto px-6 py-24 relative z-10">
         <div className="text-center mb-16">
           <p className="uppercase tracking-[0.3em] text-zinc-500 text-sm mb-4">
             Online Booking
@@ -461,7 +498,7 @@ export default function SPMakeoverPortfolio() {
             <div className="md:col-span-2 text-center mt-4">
               <button
                 type="submit"
-                className="px-10 py-5 rounded-2xl bg-white text-black font-semibold text-lg hover:scale-110 hover:shadow-white/30 transition-all duration-500 shadow-2xl"
+                className="px-10 py-5 rounded-2xl bg-white text-black font-semibold text-lg hover:scale-110 hover:-translate-y-1 hover:shadow-white/30 transition-all duration-500 shadow-2xl active:scale-95"
               >
                 Book Appointment Now ✨
               </button>
@@ -473,7 +510,7 @@ export default function SPMakeoverPortfolio() {
       </section>
 
       {/* Contact */}
-      <section className="max-w-5xl mx-auto px-6 py-24 text-center relative z-10">
+      <section id="contact" className="max-w-5xl mx-auto px-6 py-24 text-center relative z-10">
         <p className="uppercase tracking-[0.3em] text-zinc-500 text-sm mb-4">
           Contact Us
         </p>
@@ -518,7 +555,7 @@ export default function SPMakeoverPortfolio() {
           href="https://wa.me/918541971625"
           target="_blank"
           rel="noreferrer"
-          className="inline-block px-10 py-5 rounded-2xl bg-white text-black font-semibold text-lg hover:scale-110 hover:shadow-white/30 transition-all duration-500 shadow-2xl animate-pulse"
+          className="inline-block px-10 py-5 rounded-2xl bg-white text-black font-semibold text-lg hover:scale-110 hover:-translate-y-1 hover:shadow-white/30 transition-all duration-500 shadow-2xl animate-pulse active:scale-95"
         >
           Book On WhatsApp
         </a>
@@ -564,7 +601,7 @@ export default function SPMakeoverPortfolio() {
       )}
 
       {/* Developer Section */}
-      <section className="max-w-5xl mx-auto px-6 py-20 relative z-10">
+      <section id="developer" className="max-w-5xl mx-auto px-6 py-20 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
