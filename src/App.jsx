@@ -50,7 +50,15 @@ export default function SPMakeoverPortfolio() {
         ['Mehendi Makeup - Classic', '₹3000'],
         ['Mehendi Makeup - HD', '₹4000'],
         ['Mehendi Makeup - Celebrity', '₹5000'],
-        ['Engagement Makeup', '₹5000 - ₹15000'],
+      ],
+    },
+    {
+      category: 'Engagement Makeup',
+      items: [
+        ['Classic Engagement Makeup', '₹5000'],
+        ['HD Engagement Makeup', '₹8000'],
+        ['ULTRA HD Engagement Makeup', '₹15000'],
+        ['Celebrity Engagement Makeup', '₹20000'],
       ],
     },
   ];
@@ -64,17 +72,17 @@ export default function SPMakeoverPortfolio() {
     {
       title: 'Ultra HD Bridal Makeup',
       image:
-        'https://i.ibb.co/wNthK0Q0/hd.jpg',
+        'https://i.ibb.co/qFDwBvTd/ultra-hd.jpg',
     },
     {
       title: 'Party Makeup',
       image:
-        'https://i.ibb.co/0yGHXNsd/party.jpg',
+        'https://i.ibb.co/DDLzS1zx/party1.jpg',
     },
     {
-      title: 'Classic Bridal Makeup',
+      title: 'Haldi Makeup',
       image:
-        'https://i.ibb.co/XrHwG9Ky/Whats-App-Image-2026-05-10-at-12-35-44-AM.jpg',
+        'https://i.ibb.co/76fmq71/haldi.jpg',
     },
     {
       title: 'Cocktail Party Makeup',
@@ -86,8 +94,6 @@ export default function SPMakeoverPortfolio() {
       image:
         'https://i.ibb.co/XfbcLrD2/25ann.jpg',
     },
-
-    /* ADD MORE GALLERY IMAGES BELOW */
     {
       title: 'Haldi Makeup',
       image:
@@ -101,7 +107,7 @@ export default function SPMakeoverPortfolio() {
     {
       title: 'Engagement Makeup',
       image:
-        'https://i.ibb.co/8gX10Gcq/engagement.jpg"',
+        'https://i.ibb.co/8gX10Gcq/engagement.jpg',
     },
     {
       title: 'HD Bridal Makeup',
@@ -117,6 +123,48 @@ export default function SPMakeoverPortfolio() {
       title: 'Airbrush Bridal Makeup',
       image:
         'https://i.ibb.co/cKKL88W6/airbrush.jpg',
+    },
+
+    /* EXTRA 8 EMPTY GALLERY SLOTS */
+    {
+      title: 'Fantasy makeup',
+      image:
+        'https://placehold.co/800x1000/111111/FFFFFF?text=Add+Image',
+    },
+    {
+      title: 'Fantasy makeup',
+      image:
+        'https://placehold.co/800x1000/111111/FFFFFF?text=Add+Image',
+    },
+    {
+      title: 'Mood board makeup',
+      image:
+        'https://placehold.co/800x1000/111111/FFFFFF?text=Add+Image',
+    },
+    {
+      title: 'Mood board makeup',
+      image:
+        'https://placehold.co/800x1000/111111/FFFFFF?text=Add+Image',
+    },
+    {
+      title: 'Celebrity makeup',
+      image:
+        'https://placehold.co/800x1000/111111/FFFFFF?text=Add+Image',
+    },
+    {
+      title: 'Celebrity makeup',
+      image:
+        'https://placehold.co/800x1000/111111/FFFFFF?text=Add+Image',
+    },
+    {
+      title: 'Prosthetic makeup',
+      image:
+        'https://placehold.co/800x1000/111111/FFFFFF?text=Add+Image',
+    },
+    {
+      title: 'Prosthetic makeup',
+      image:
+        'https://placehold.co/800x1000/111111/FFFFFF?text=Add+Image',
     },
   ];
 
