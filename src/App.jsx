@@ -64,17 +64,17 @@ export default function SPMakeoverPortfolio() {
     {
       title: 'Ultra HD Bridal Makeup',
       image:
-        'https://i.ibb.co/qFDwBvTd/ultra-hd.jpg',
+        'https://i.ibb.co/wNthK0Q0/hd.jpg',
     },
     {
       title: 'Party Makeup',
       image:
-        'https://i.ibb.co/DDLzS1zx/party1.jpg',
+        'https://i.ibb.co/0yGHXNsd/party.jpg',
     },
     {
-      title: 'Haldi Makeup',
+      title: 'Classic Bridal Makeup',
       image:
-        'https://i.ibb.co/76fmq71/haldi.jpg',
+        'https://i.ibb.co/XrHwG9Ky/Whats-App-Image-2026-05-10-at-12-35-44-AM.jpg',
     },
     {
       title: 'Cocktail Party Makeup',
